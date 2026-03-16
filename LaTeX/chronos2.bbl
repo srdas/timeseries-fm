@@ -1,0 +1,88 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Ansari, Shchur, Küken, Auer, Han, Mercado, Rangapuram, Shen, Stella, Zhang, Goswami, Kapoor, Maddix, Guerron, Hu, Yin, Erickson, Desai, Wang, Rangwala, Karypis, Wang, and Bohlke-Schneider}{Ansari et~al.}{2025}]{ansari_chronos-2_2025}
+Ansari, A.~F., O.~Shchur, J.~Küken, A.~Auer, B.~Han, P.~Mercado, S.~S. Rangapuram, H.~Shen, L.~Stella, X.~Zhang, M.~Goswami, S.~Kapoor, D.~C. Maddix, P.~Guerron, T.~Hu, J.~Yin, N.~Erickson, P.~M. Desai, H.~Wang, H.~Rangwala, G.~Karypis, Y.~Wang, and M.~Bohlke-Schneider (2025, October).
+\newblock Chronos-2: {From} {Univariate} to {Universal} {Forecasting}.
+\newblock arXiv:2510.15821 [cs].
+
+\bibitem[\protect\citeauthoryear{Ansari, Stella, Turkmen, Zhang, Mercado, Shen, Shchur, Rangapuram, Arango, Kapoor, Zschiegner, Maddix, Wang, Mahoney, Torkkola, Wilson, Bohlke-Schneider, and Wang}{Ansari et~al.}{2024}]{ansari_chronos_2024}
+Ansari, A.~F., L.~Stella, C.~Turkmen, X.~Zhang, P.~Mercado, H.~Shen, O.~Shchur, S.~S. Rangapuram, S.~P. Arango, S.~Kapoor, J.~Zschiegner, D.~C. Maddix, H.~Wang, M.~W. Mahoney, K.~Torkkola, A.~G. Wilson, M.~Bohlke-Schneider, and Y.~Wang (2024).
+\newblock Chronos: {Learning} the {Language} of {Time} {Series}.
+\newblock arXiv: 2403.07815.
+
+\bibitem[\protect\citeauthoryear{Bahrpeyma, Roantree, Cappellari, Scriney, and McCarren}{Bahrpeyma et~al.}{2021}]{bahrpeyma_methodology_2021}
+Bahrpeyma, F., M.~Roantree, P.~Cappellari, M.~Scriney, and A.~McCarren (2021, January).
+\newblock A {Methodology} for {Validating} {Diversity} in {Synthetic} {Time} {Series} {Generation}.
+\newblock {\em MethodsX\/}~{\em 8}, 101459.
+
+\bibitem[\protect\citeauthoryear{Bianchi, Büchner, and Tamoni}{Bianchi et~al.}{2020}]{bianchi_bond_2020}
+Bianchi, D., M.~Büchner, and A.~Tamoni (2020).
+\newblock Bond {Risk} {Premiums} with {Machine} {Learning}.
+\newblock {\em The Review of Financial Studies\/}~{\em 34\/}(2), 1046--1089.
+
+\bibitem[\protect\citeauthoryear{Caldeira, Moura, and Santos}{Caldeira et~al.}{2013}]{caldeira_predicting_2013}
+Caldeira, J., G.~V. Moura, and A.~A. Santos (2013).
+\newblock Predicting the {Yield} {Curve} using {Forecast} {Combinations}.
+\newblock Publication Title: SSRN Electronic Journal.
+
+\bibitem[\protect\citeauthoryear{Challu, Olivares, Oreshkin, Ramirez, Canseco, and Dubrawski}{Challu et~al.}{2023}]{challu_nhits_2023}
+Challu, C., K.~G. Olivares, B.~N. Oreshkin, F.~G. Ramirez, M.~M. Canseco, and A.~Dubrawski (2023, June).
+\newblock {NHITS}: {Neural} {Hierarchical} {Interpolation} for {Time} {Series} {Forecasting}.
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence\/}~{\em 37\/}(6), 6989--6997.
+
+\bibitem[\protect\citeauthoryear{Godahewa, Bergmeir, Webb, Hyndman, and Montero-Manso}{Godahewa et~al.}{2021}]{godahewa_monash_2021}
+Godahewa, R., C.~Bergmeir, G.~I. Webb, R.~J. Hyndman, and P.~Montero-Manso (2021, May).
+\newblock Monash {Time} {Series} {Forecasting} {Archive}.
+\newblock arXiv:2105.06643 [cs].
+
+\bibitem[\protect\citeauthoryear{Hoogteijling, Martens, and Wel}{Hoogteijling et~al.}{2021}]{hoogteijling_forecasting_2021}
+Hoogteijling, T., M.~P.~E. Martens, and M.~v.~d. Wel (2021, April).
+\newblock Forecasting {Bond} {Risk} {Premia} using {Stationary} {Yield} {Factors}.
+
+\bibitem[\protect\citeauthoryear{López~de Prado}{López~de Prado}{2018}]{lopez_de_prado_advances_2018}
+López~de Prado, M. (2018, January).
+\newblock {\em Advances in {Financial} {Machine} {Learning}}.
+\newblock Wiley.
+
+\bibitem[\protect\citeauthoryear{Makridakis, Spiliotis, and Assimakopoulos}{Makridakis et~al.}{2020}]{makridakis_m4_2020}
+Makridakis, S., E.~Spiliotis, and V.~Assimakopoulos (2020).
+\newblock The {M4} {Competition}: 100,000 time-series and 61 {Forecasting} {Methods}.
+\newblock {\em International Journal of Forecasting\/}~{\em 36\/}(1), 54--74.
+
+\bibitem[\protect\citeauthoryear{Moench}{Moench}{2006}]{moench_forecasting_2006}
+Moench, E. (2006).
+\newblock Forecasting the {Yield} {Curve} in a {Data}-{Rich} {Environment}: {A} {No}-{Arbitrage} {Factor}-{Augmented} {VAR} {Approach}.
+\newblock {\em SSRN Electronic Journal\/}.
+
+\bibitem[\protect\citeauthoryear{Runge, Gerhardus, Varando, Eyring, and Camps-Valls}{Runge et~al.}{2023}]{runge_causal_2023}
+Runge, J., A.~Gerhardus, G.~Varando, V.~Eyring, and G.~Camps-Valls (2023, July).
+\newblock Causal inference for time series.
+\newblock {\em Nature Reviews Earth and Environment\/}~{\em 4}, 487--505.
+\newblock ADS Bibcode: 2023NRvEE...4..487R.
+
+\bibitem[\protect\citeauthoryear{Sambasivan and Das}{Sambasivan and Das}{2017}]{sambasivan_statistical_2017}
+Sambasivan, R. and S.~Das (2017).
+\newblock A {Statistical} {Machine} {Learning} {Approach} to {Yield} {Curve} {Forecasting}.
+\newblock In {\em 2017 {International} {Conference} on {Computational} {Intelligence} in {Data} {Science} ({ICCIDS})}.
+
+\bibitem[\protect\citeauthoryear{Sezer, Gudelek, and Ozbayoglu}{Sezer et~al.}{2019}]{sezer_financial_2019}
+Sezer, O.~B., M.~U. Gudelek, and A.~M. Ozbayoglu (2019, November).
+\newblock Financial {Time} {Series} {Forecasting} with {Deep} {Learning} : {A} {Systematic} {Literature} {Review}: 2005-2019.
+\newblock arXiv:1911.13288 [cs].
+
+\bibitem[\protect\citeauthoryear{Shumway and Stoffer}{Shumway and Stoffer}{2025}]{shumway_time_2025}
+Shumway, R.~H. and D.~S. Stoffer (2025).
+\newblock {\em Time {Series} {Analysis} and {Its} {Applications}: {With} {R} {Examples}}.
+\newblock Springer {Texts} in {Statistics}. Cham: Springer Nature Switzerland.
+
+\bibitem[\protect\citeauthoryear{Singh, Ogunfunmi, and Das}{Singh et~al.}{2025}]{singh_yield_2025}
+Singh, A., T.~Ogunfunmi, and S.~Das (2025).
+\newblock Yield {Curve} {Forecasting} using {Machine} {Learning} and {Econometrics}: {A} {Comparative} {Analysis}.
+\newblock {\em Journal of Investment Management\/}~{\em 23\/}(4), 37--58.
+
+\bibitem[\protect\citeauthoryear{Sunki, SatyaKumar, Surya~Narayana, Koppera, and Hakeem}{Sunki et~al.}{2024}]{sunki_time_2024}
+Sunki, A., C.~SatyaKumar, G.~Surya~Narayana, V.~Koppera, and M.~Hakeem (2024).
+\newblock Time series forecasting of stock market using {ARIMA}, {LSTM} and {FB} prophet.
+\newblock {\em MATEC Web of Conferences\/}~{\em 392}, 01163.
+
+\end{thebibliography}
