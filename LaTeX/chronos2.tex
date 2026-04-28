@@ -60,17 +60,19 @@
 
 \begin{document}
 
-\title{Financial Forecasting using the Chronos \\ Time Series Foundation Models\thanks{Das is a professor of finance, and Goyal and Yadav are graduate students in the Leavey School of Business at SCU.}}
-\author{Sanjiv R. Das, Tarang Goyal, Mohini Yadav \\ Santa Clara University\\ \texttt{srdas@scu.edu; tgoyal@scu.edu; myadav@scu.edu}}
+% \title{Multivariate Financial Forecasting using the \\Chronos Time Series Foundation Models\thanks{Das is a professor of Finance and Data Science, and Goyal and Yadav are graduate students in the Leavey School of Business at Santa Clara University.}}
+% \author{Sanjiv R. Das, Tarang Goyal, Mohini Yadav \\ Santa Clara University\\ \texttt{srdas@scu.edu; tgoyal@scu.edu; myadav@scu.edu}}
+
+\title{Multivariate Financial Forecasting using the \\Chronos Time Series Foundation Models}
+
 \maketitle
 
 
 \begin{abstract}
-Using Chronos-2, an open-source time-series foundation model, we evaluate pretrained time-series models for economic and financial forecasting with an emphasis on whether multivariate (MV) inputs improve accuracy relative to univariate (UV) baselines. The study covers two panels---the Magnificent-7 equities and U.S. Treasury interest rates---as well as a combined panel, using rolling monthly evaluations from 2000--2025. We vary input window lengths and forecast horizons and report RMSE and MAPE. Across datasets, MV forecasts consistently outperform UV forecasts, with especially strong gains for interest rates and meaningful improvements for equities. Series-level comparisons show MV improvements in every case, and error dispersion is generally lower under MV inputs. We also provide parameter-heatmap and time-series visualizations. However, mixing time series across equity and interest rate markets reduces forecast accuracy, indicating that adding noisy context degrades model performance. Overall, the results indicate that foundation models can leverage cross-series information to improve forecast accuracy in finance, and that the benefits are strongest when related series are modeled jointly under disciplined rolling protocols.
+Using Chronos-2, an open-source time-series foundation model, we evaluate pretrained time-series models for economic and financial forecasting with an emphasis on whether multivariate (MV) inputs improve accuracy relative to univariate (UV) baselines. The study covers two panels---the Magnificent-7 equities and U.S. Treasury interest rates---as well as a combined panel, using rolling monthly evaluations from 2000--2025. We vary input window lengths and forecast horizons and report RMSE and MAPE. Across datasets, MV forecasts consistently outperform UV forecasts, with especially strong gains for interest rates and meaningful improvements for equities. Series-level comparisons show MV improvements in every case, and error dispersion is generally lower under MV inputs. We also provide parameter-heatmap and time-series visualizations. However, mixing time series across equity and interest rate markets reduces forecast accuracy, indicating that adding noisy context degrades model performance. Overall, the results indicate that foundation models can leverage cross-series information to improve forecast accuracy in finance, and that the benefits are strongest when related series are modeled jointly under disciplined rolling protocols. Other than using an open-source foundation model, this paper also  showcases how AI may be used for financial research. 
 \end{abstract}
 
 
-% \section{An Overview of Goals-Based Wealth Management}
 \section{Introduction}
 
 Time-series forecasting in finance remains a contested area for modern machine learning. While deep learning has transformed natural language processing and computer vision, its advantage in economic and financial forecasting is far less clear. Recent comparative studies of U.S. Treasury yield curve forecasting report that classical econometric baselines and simple benchmarks can outperform many modern machine-learning models across long spans of daily data, with only a few learning approaches delivering competitive gains. These findings underscore an open question for practitioners: when, and under what conditions, do multivariate forecasting methods provide reliable improvements over univariate forecasting? Adding data for a forecast brings up the standard question of whether it introduces signal or noise.
@@ -79,7 +81,7 @@ The emergence of foundation models---large, self-supervised models trained on br
 
 This paper evaluates whether foundation-model forecasting can deliver practical improvements in economic and financial settings, focusing on Chronos-2, an open-source time-series foundation model (GitHub: \url{https://github.com/amazon-science/chronos-forecasting}). Our central hypothesis is that multivariate (MV) inputs, when properly chosen, aligned, and modeled, can help the model extract cross-series information and outperform univariate (UV) baselines. We test this hypothesis across two economically meaningful panels: the Magnificent-7 equities and a set of U.S. Treasury interest rates, and we also study a combined panel to assess whether joint modeling improves results.
 
-The contribution of the paper is threefold. First, we provide a systematic comparison of MV versus UV forecasting across equities and rates with a consistent rolling evaluation protocol. We find that the MV approach beats the UV one. Second, we examine whether MV gains differ by asset class and whether joint stock and interest rates modeling improves accuracy. In this case, we find that adding a different class of time series does not improve forecasting, highlighting that expanding the basis set for modeling does not always improve forecast accuracy. Indeed, there is a signal to noise tradeoff that applies here. Third, we offer large-scale outputs---error metrics, forecasts with uncertainty quantiles, and visualization-ready artifacts---to support robust evaluation and downstream use. Collectively, these results clarify the conditions under which foundation models add value relative to standard forecasting practice in finance.
+The contribution of the paper is fourfold. First, we provide a systematic comparison of MV versus UV forecasting across equities and rates with a consistent rolling evaluation protocol. We find that the MV approach beats the UV one. Second, we examine whether MV gains differ by asset class and whether joint stock and interest rates modeling improves accuracy. In this case, we find that adding a different class of time series does not improve forecasting, highlighting that expanding the basis set for modeling does not always improve forecast accuracy. Indeed, there is a signal to noise tradeoff that applies here. Third, we offer large-scale outputs---error metrics, forecasts with uncertainty quantiles, and visualization-ready artifacts---to support robust evaluation and downstream use. Fourth, we provide in Appendix \ref{ai_workflow} the process by which AI was not only the subject of the paper, but was also used to produce the paper. Collectively, these results clarify the conditions under which foundation models add value relative to standard forecasting practice in finance.
 
 \subsection{Literature Review}
 
@@ -309,6 +311,49 @@ Future work can extend the framework in three directions. One path is to broaden
 \balance
 \bibliographystyle{chicago}
 \bibliography{ts}
+
+\appendix
+
+\section{Appendix: AI-Driven Workflow to Generate the Paper}
+\label{ai_workflow}
+
+This appendix outlines how the paper was produced with the assistance of Artificial Intelligence.
+
+The paper involves three co-authors: Professor Sanjiv Das and two MS students, Tarang Goyal and Mohini Yadav, all affiliated with Santa Clara University.
+
+The project began informally in January 2026 when Professor Das outlined the work to the students. The students delivered the completed code in a single Google Colab notebook by late February. For the purpose of this workflow, the ``formal'' writing process began at that point. The students utilized Gemini to assist in code development. Subsequently, the professor modified the code to utilize GPU resources and rerun the analyses. OpenAI Prism was then used to draft the paper over several hours of interaction, followed by final human editing. Work was completed in 2 months.
+
+\section*{Detailed Workflow Step-by-Step}
+
+Each step below was followed by human review, if AI was involved. 
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Conceptualization:} Students are provided an initial outline.
+    \item \textbf{Initial Coding:} Students prepare a Google Colab notebook with assistance from Gemini.
+    \item \textbf{Refinement:} The professor updates the notebook, modularizing the code and updating logic, also utilizing Gemini for coding assistance.
+    \item \textbf{Data Preparation:} Results are finalized in Colab, consisting of printed dataframes, plots, and textual outputs.
+    \item \textbf{Environment Setup:} A \LaTeX{} shell for the paper is established in OpenAI Prism (\url{https://openai.com/prism/}).
+    \item \textbf{Outlining:} The structure is set up with blank sections: Introduction, Methodology, Results, and Concluding Discussion (including relevant subsections).
+    \item \textbf{Table Conversion:} Printed dataframes from Colab are fed into Gemini with prompts to convert them into \LaTeX{} tables. These are then integrated into the Results section.
+    \item \textbf{Visuals:} Figures are added to the project folder, and the corresponding \LaTeX{} code for figure inclusion is written.
+    \item \textbf{Drafting Results:} Prism is tasked with drafting text for the Results section to explain the tables and figures. Notably, the underlying model (GPT-5.2) inferred results directly from the tables to generate the write-up.
+    \item \textbf{Methodology:} The Chronos-1 and Chronos-2 papers, along with experiment descriptions from the Colab notebook, are uploaded to Gemini. Gemini generates the Methodology section, which is then moved to the draft.
+    \item \textbf{Specific Subsections:} A subsection on data leakage is added; the reasoning is provided by the authors while the LLM handles the prose.
+    \item \textbf{Literature Review (Part 1):} A Bib\TeX{} file from Zotero is uploaded. Prism is prompted to generate a literature review based on the citations as they relate to the Methodology and Results.
+    \item \textbf{Introduction and Literature Review (Part 2):} Previously published related papers are uploaded. Prism generates the Introduction and updates the literature review for context.
+    \item \textbf{Conclusions:} Using the full paper as context, Prism generates the Concluding Discussion.
+    \item \textbf{Abstract:} Prism is prompted to synthesize an abstract for the completed draft.
+    \item \textbf{Human Editing:} Final human-led editing passes are performed to improve narrative flow, reformat the \LaTeX{} layout, and ensure technical accuracy.
+\end{enumerate}
+
+\subsection*{Self Review and Revision Process}
+Gemini was also utilized to generate a mock referee report (\texttt{review.pdf}). This report informed a response document (\texttt{responses.md}) created with the following prompt: 
+\begin{quote}
+    \textit{``Please read the file ‘review.pdf‘ which is a referee report on the paper ‘chronos2.pdf‘ – then suggest changes and improvements to the paper in a document titled ‘response.md‘ that outlines the changes in response to cited sections of ‘review.pdf‘ as a response note to the review.''}
+\end{quote}
+Final edits were made to the manuscript based on these AI-suggested improvements. 
+
+% The code and files for the paper have been made public on GitHub: \url{https://github.com/srdas/timeseries-fm/tree/main}.
 
 
 \end{document}
