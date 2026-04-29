@@ -79,7 +79,7 @@ Time-series forecasting in finance remains a contested area for modern machine l
 
 The emergence of foundation models---large, self-supervised models trained on broad data and adapted to downstream tasks---has begun to reshape time-series forecasting. The promise of these models is not only scale, but also transfer: a single model can exploit shared structure across diverse series and potentially improve predictive accuracy in domains where data are limited or noisy. Yet evidence from forecasting competitions and applied finance \citep{singh_yield_2025} suggests that pure deep-learning solutions often struggle unless they are hybridized or carefully engineered.
 
-This paper evaluates whether foundation-model forecasting can deliver practical improvements in economic and financial settings, focusing on Chronos-2, an open-source time-series foundation model (GitHub: \url{https://github.com/amazon-science/chronos-forecasting}). Our central hypothesis is that multivariate (MV) inputs, when properly chosen, aligned, and modeled, can help the model extract cross-series information and outperform univariate (UV) baselines. We test this hypothesis across two economically meaningful panels: the Magnificent-7 equities and a set of U.S. Treasury interest rates, and we also study a combined panel to assess whether joint modeling improves results.
+This paper evaluates whether foundation-model forecasting can deliver practical improvements in economic and financial settings, focusing on Chronos-2, an open-source time-series foundation model (GitHub: \url{https://github.com/amazon-science/chronos-forecasting}). Just as large language models generate a sequence of words, Chronos-2 Chronos-2 is trained on thousands of time series, and generates forward sequences of data based on multivariate histories. Our central hypothesis is that multivariate (MV) inputs, when properly chosen, aligned, and modeled, can help the model extract cross-series information and outperform univariate (UV) baselines. We test this hypothesis across two economically meaningful panels: the Magnificent-7 equities and a set of U.S. Treasury interest rates, and we also study a combined panel to assess whether joint modeling improves results.
 
 The contribution of the paper is fourfold. First, we provide a systematic comparison of MV versus UV forecasting across equities and rates with a consistent rolling evaluation protocol. We find that the MV approach beats the UV one. Second, we examine whether MV gains differ by asset class and whether joint stock and interest rates modeling improves accuracy. In this case, we find that adding a different class of time series does not improve forecasting, highlighting that expanding the basis set for modeling does not always improve forecast accuracy. Indeed, there is a signal to noise tradeoff that applies here. Third, we offer large-scale outputs---error metrics, forecasts with uncertainty quantiles, and visualization-ready artifacts---to support robust evaluation and downstream use. Fourth, we provide in Appendix \ref{ai_workflow} the process by which AI was not only the subject of the paper, but was also used to produce the paper. Collectively, these results clarify the conditions under which foundation models add value relative to standard forecasting practice in finance.
 
@@ -319,9 +319,6 @@ Future work can extend the framework in three directions. One path is to broaden
 
 This appendix outlines how the paper was produced with the assistance of Artificial Intelligence.
 
-The paper involves three co-authors: Professor Sanjiv Das and two MS students, Tarang Goyal and Mohini Yadav, all affiliated with Santa Clara University.
-
-The project began informally in January 2026 when Professor Das outlined the work to the students. The students delivered the completed code in a single Google Colab notebook by late February. For the purpose of this workflow, the ``formal'' writing process began at that point. The students utilized Gemini to assist in code development. Subsequently, the professor modified the code to utilize GPU resources and rerun the analyses. OpenAI Prism was then used to draft the paper over several hours of interaction, followed by final human editing. Work was completed in 2 months.
 
 \section*{Detailed Workflow Step-by-Step}
 
@@ -353,7 +350,7 @@ Gemini was also utilized to generate a mock referee report (\texttt{review.pdf})
 \end{quote}
 Final edits were made to the manuscript based on these AI-suggested improvements. 
 
-% The code and files for the paper have been made public on GitHub: \url{https://github.com/srdas/timeseries-fm/tree/main}.
+The code and files for the paper have been made public on GitHub: \url{https://github.com/srdas/timeseries-fm/tree/main}.
 
 
 \end{document}

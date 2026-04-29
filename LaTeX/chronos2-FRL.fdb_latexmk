@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex chronos2"] 1777411455 "chronos2.aux" "chronos2.bbl" "chronos2" 1777475294 0
+["bibtex chronos2-FRL"] 1777474392 "chronos2-FRL.aux" "chronos2-FRL.bbl" "chronos2-FRL" 1777475090 0
   "./ts.bib" 1773695800 43958 5dc882f75270c27925f2aaac95789948 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/chicago/chicago.bst" 1198629289 37416 2ae04276c51f11eda70770f4081293b7 ""
-  "chronos2.aux" 1777475294 9716 d4b6ea8537f0961de2819fd55c0269b6 "pdflatex"
+  "chronos2-FRL.aux" 1777475089 9704 d19dacfaddfcdab29b8ad0179369b713 "pdflatex"
   (generated)
-  "chronos2.bbl"
-  "chronos2.blg"
+  "chronos2-FRL.bbl"
+  "chronos2-FRL.blg"
   (rewritten before read)
-["pdflatex"] 1777475293 "/Users/sanjivda/CODE/timeseries-fm/LaTeX/chronos2.tex" "chronos2.pdf" "chronos2" 1777475294 0
-  "/Users/sanjivda/CODE/timeseries-fm/LaTeX/chronos2.tex" 1777475292 36095 b039348fb613639c079f379d781316f8 ""
+["pdflatex"] 1777475088 "/Users/sanjivda/CODE/timeseries-fm/LaTeX/chronos2-FRL.tex" "chronos2-FRL.pdf" "chronos2-FRL" 1777475090 0
+  "/Users/sanjivda/CODE/timeseries-fm/LaTeX/chronos2-FRL.tex" 1777475088 29144 e09818299be74114b8d639a46dbfe2b2 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -152,17 +152,17 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1706114967 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1706114935 7883460 ecf64d9192c7a974287872a303e2fb6b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "chronos2.aux" 1777475294 9716 d4b6ea8537f0961de2819fd55c0269b6 "pdflatex"
-  "chronos2.bbl" 1777411455 6189 9db2b19dbd52ca4a61505b12fecac6fa "bibtex chronos2"
-  "chronos2.out" 1777475294 1953 e6c3906873abcda1e8dd2516934db433 "pdflatex"
-  "chronos2.tex" 1777475292 36095 b039348fb613639c079f379d781316f8 ""
+  "chronos2-FRL.aux" 1777475089 9704 d19dacfaddfcdab29b8ad0179369b713 "pdflatex"
+  "chronos2-FRL.bbl" 1777474393 6189 9db2b19dbd52ca4a61505b12fecac6fa "bibtex chronos2-FRL"
+  "chronos2-FRL.out" 1777475089 1953 e6c3906873abcda1e8dd2516934db433 "pdflatex"
+  "chronos2-FRL.tex" 1777475088 29144 e09818299be74114b8d639a46dbfe2b2 ""
   "error_series.png" 1773695110 271229 425f6d17171ebc57fc099857da372200 ""
   "pre_post_2023_cutoff.png" 1773695110 49040 247769adfff159d6e80e372050bc12b8 ""
   "rates_mape.png" 1773695110 68136 861200173a05891b12b9d82e64c7d5fe ""
   "stocks_mape.png" 1773695110 70475 58791f0060c4455e990dd632800a65cd ""
   (generated)
-  "chronos2.aux"
-  "chronos2.log"
-  "chronos2.out"
-  "chronos2.pdf"
+  "chronos2-FRL.aux"
+  "chronos2-FRL.log"
+  "chronos2-FRL.out"
+  "chronos2-FRL.pdf"
   (rewritten before read)
