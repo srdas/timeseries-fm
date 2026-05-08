@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99e (TeX Live 2026)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: chronos2.aux
 The style file: chicago.bst
@@ -8,45 +8,45 @@ Warning--no number and no volume in hoogteijling_forecasting_2021
 Warning--page numbers missing in hoogteijling_forecasting_2021
 Warning--no number and no volume in moench_forecasting_2006
 Warning--page numbers missing in moench_forecasting_2006
-You've used 17 entries,
+You've used 18 entries,
             2861 wiz_defined-function locations,
-            710 strings with 8924 characters,
-and the built_in function-call counts, 15407 in all, are:
-= -- 1065
-> -- 1731
+            715 strings with 9111 characters,
+and the built_in function-call counts, 16047 in all, are:
+= -- 1122
+> -- 1783
 < -- 0
-+ -- 560
-- -- 570
-* -- 1649
-:= -- 2954
-add.period$ -- 52
-call.type$ -- 17
-change.case$ -- 174
-chr.to.int$ -- 17
-cite$ -- 22
-duplicate$ -- 288
-empty$ -- 641
-format.name$ -- 630
-if$ -- 2769
++ -- 578
+- -- 590
+* -- 1699
+:= -- 3075
+add.period$ -- 55
+call.type$ -- 18
+change.case$ -- 181
+chr.to.int$ -- 18
+cite$ -- 23
+duplicate$ -- 303
+empty$ -- 672
+format.name$ -- 654
+if$ -- 2883
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 14
-newline$ -- 88
-num.names$ -- 170
-pop$ -- 142
+newline$ -- 93
+num.names$ -- 180
+pop$ -- 147
 preamble$ -- 1
-purify$ -- 278
+purify$ -- 291
 quote$ -- 0
-skip$ -- 302
+skip$ -- 324
 stack$ -- 0
-substring$ -- 504
-swap$ -- 88
+substring$ -- 526
+swap$ -- 93
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 320
+type$ -- 340
 warning$ -- 5
-while$ -- 130
+while$ -- 140
 width$ -- 0
-write$ -- 225
+write$ -- 238
 (There were 5 warnings)

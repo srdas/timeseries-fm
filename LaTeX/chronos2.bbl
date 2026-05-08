@@ -85,4 +85,9 @@ Sunki, A., C.~SatyaKumar, G.~Surya~Narayana, V.~Koppera, and M.~Hakeem (2024).
 \newblock Time series forecasting of stock market using {ARIMA}, {LSTM} and {FB} prophet.
 \newblock {\em MATEC Web of Conferences\/}~{\em 392}, 01163.
 
+\bibitem[\protect\citeauthoryear{Zhang and Zhang}{Zhang and Zhang}{2026}]{zhang_review_2026}
+Zhang, O. and Z.~Zhang (2026, April).
+\newblock A {Review} of {Large} {Language} {Models} for {Stock} {Price} {Forecasting} from a {Hedge}-{Fund} {Perspective}.
+\newblock arXiv:2605.05211 [q-fin].
+
 \end{thebibliography}

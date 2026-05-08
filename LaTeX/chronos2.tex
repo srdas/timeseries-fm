@@ -60,10 +60,10 @@
 
 \begin{document}
 
-% \title{Multivariate Financial Forecasting using the \\Chronos Time Series Foundation Models\thanks{Das is a professor of Finance and Data Science, and Goyal and Yadav are graduate students in the Leavey School of Business at Santa Clara University.}}
-% \author{Sanjiv R. Das, Tarang Goyal, Mohini Yadav \\ Santa Clara University\\ \texttt{srdas@scu.edu; tgoyal@scu.edu; myadav@scu.edu}}
+\title{Multivariate Financial Forecasting using the \\Chronos Time Series Foundation Models\thanks{Das is a professor of Finance and Data Science, and Goyal and Yadav are graduate students in the Leavey School of Business at Santa Clara University.}}
+\author{Sanjiv R. Das, Tarang Goyal, Mohini Yadav \\ Santa Clara University\\ \texttt{srdas@scu.edu; tgoyal@scu.edu; myadav@scu.edu}}
 
-\title{Multivariate Financial Forecasting using the \\Chronos Time Series Foundation Models}
+% \title{Multivariate Financial Forecasting using the \\Chronos Time Series Foundation Models}
 
 \maketitle
 
@@ -83,13 +83,13 @@ This paper evaluates whether foundation-model forecasting can deliver practical 
 
 The contribution of the paper is fourfold. First, we provide a systematic comparison of MV versus UV forecasting across equities and rates with a consistent rolling evaluation protocol. We find that the MV approach beats the UV one. Second, we examine whether MV gains differ by asset class and whether joint stock and interest rates modeling improves accuracy. In this case, we find that adding a different class of time series does not improve forecasting, highlighting that expanding the basis set for modeling does not always improve forecast accuracy. Indeed, there is a signal to noise tradeoff that applies here. Third, we offer large-scale outputs---error metrics, forecasts with uncertainty quantiles, and visualization-ready artifacts---to support robust evaluation and downstream use. Fourth, we provide in Appendix \ref{ai_workflow} the process by which AI was not only the subject of the paper, but was also used to produce the paper. Collectively, these results clarify the conditions under which foundation models add value relative to standard forecasting practice in finance.
 
-\subsection{Literature Review}
+\subsection{Brief Literature Review}
 
 The literature on financial time-series forecasting spans classical econometrics, machine learning, and recent deep-learning approaches. Standard time-series tools and statistical benchmarks remain central in practice and are documented in foundational texts \citep{shumway_time_2025}. In fixed-income applications, yield curve forecasting has been studied using no-arbitrage and factor-augmented approaches \citep{moench_forecasting_2006} as well as forecast combinations \citep{caldeira_predicting_2013}. Machine-learning methods have been applied to yield curves with mixed results, including statistical ML approaches \citep{sambasivan_statistical_2017} and more recent comparative studies that find strong performance for classical econometric baselines relative to many ML and deep-learning models \citep{singh_yield_2025}. Related work on bond risk premia also highlights the potential and limitations of ML for term-structure prediction \citep{bianchi_bond_2020,hoogteijling_forecasting_2021}.
 
 For equities and broader financial markets, surveys emphasize the breadth of deep-learning adoption but also the variability of performance across datasets and tasks \citep{sezer_financial_2019}. Empirical studies comparing ARIMA, LSTM, and Prophet illustrate that model choice can be highly data-dependent, with traditional statistical methods remaining competitive in many settings \citep{sunki_time_2024}. The broader financial machine-learning literature argues for careful feature engineering, rigorous validation, and robust benchmarks to avoid overfitting and spurious gains \citep{lopez_de_prado_advances_2018}. These themes motivate careful UV baselines and out-of-sample evaluation in this paper.
 
-Recent advances in deep-learning forecasting include specialized architectures such as NHITS \citep{challu_nhits_2023} and, more recently, foundation models for time series. Chronos is a large, self-supervised forecasting model trained on diverse datasets and designed for transfer across domains \citep{ansari_chronos_2024}. This paper contributes to the growing evidence on foundation models by testing whether MV inputs can systematically improve forecasting accuracy in economically important panels of equities and rates, and by reporting results using consistent rolling protocols and multiple error metrics. In this paper we focus on the newest generation in this class of models, namely Chronos-2 \citep{ansari_chronos-2_2025}.
+Recent advances in deep-learning forecasting include specialized architectures such as NHITS \citep{challu_nhits_2023} and, more recently, foundation models for time series. A recent review is available in \cite{zhang_review_2026}. Chronos is a large, self-supervised forecasting model trained on diverse datasets and designed for transfer across domains \citep{ansari_chronos_2024}. This paper contributes to the growing evidence on foundation models by testing whether MV inputs can systematically improve forecasting accuracy in economically important panels of equities and rates, and by reporting results using consistent rolling protocols and multiple error metrics. In this paper we focus on the newest generation in this class of models, namely Chronos-2 \citep{ansari_chronos-2_2025}.
 
 
 
