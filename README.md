@@ -77,3 +77,12 @@ For this data, create a script to download it so that it can be re-run and updat
 
 3. Use both together. ($K=17$)
 
+## Code
+
+The required packages are in `requirements.txt`.
+
+To download the data, generate forecasts, and forecast errors, as well as collect statistics and prepare visualizations, use any of the notebooks `Chronos2_Consolidated*.ipynb`. Change the date ranges and comment out either the Stocks, Rates, Combined file read-ins as needed. 
+
+Once the files are ready, use the notebook `Chronos2_Analysis_Rates_Stocks.ipynb` to generate all the required results. As noted above, comment out the asset class you do not want to run. 
+
+
