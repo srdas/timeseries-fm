@@ -104,6 +104,14 @@ The study addresses three related questions for the Chronos-2 model. First, we t
 
 Chronos-2 \citep{ansari_chronos-2_2025} extends the foundation-model approach to time-series forecasting by moving beyond purely univariate inputs toward a universal, zero-shot framework that can handle multivariate groups and covariate-informed tasks. The motivation is pragmatic: real forecasting problems often involve co-evolving series or external drivers, yet most pretrained models are limited to single-series histories. Chronos-2 addresses this gap by enabling joint inference across related series without task-specific retraining, simplifying deployment and improving transfer to new domains.
 
+\begin{figure*}[h]
+\centering
+\includegraphics[scale=0.65]{nvda_forecast.png}
+\caption{\label{nvda_forecast} \small Forecast for NVDA. The input series is provided and the forecast is generated with error bounds. Here the forecast is plotted against the true outcome as well. }
+\end{figure*}
+
+Chronos-2 is just like a LLM for time-series sequences. Just as you provide a seed sequence of text (a prompt) to an LLM and it generates a textual continuation (the response), so it is with a TSFM like Chronos2 -- you provide a time series to the pretrained model and it generates a continuation, i.e., the forecast of the length you prespecify. As a visual example, see Figure \ref{nvda_forecast}.
+
 Architecturally, Chronos-2 introduces a group-attention mechanism that supports in-context learning across sets of series. A ``group'' can represent variates of a multivariate series, multiple related targets, or targets plus covariates. The attention design enables efficient information sharing and allows the model to learn cross-series structure at inference time, which is crucial for multivariate forecasting and covariate conditioning.
 
 To train these capabilities, Chronos-2 is built on synthetic multivariate constructions derived from univariate time series, enforcing diverse dependence structures during pretraining. Evaluation is reported on multivariate and covariate-aware benchmarks such as fev-bench, GIFT-Eval, and Chronos Benchmark II, where Chronos-2 attains state-of-the-art performance, particularly on covariate-conditioned tasks. These design choices align with our use case: leveraging joint structure across equities and rates and assessing whether MV inputs yield systematic gains over UV baselines.
